@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<OrleansConfiguration xmlns="urn:orleans">
+  <Globals>
+    <!--种子节点,也是主节点-->
+    <SeedNode Address="localhost" Port="11111" />
+    <!--<SystemStore SystemStoreType="SqlServer"
+             DeploymentId="OrleansTest"
+             DataConnectionString="Data Source=.;Initial Catalog=OrleansBasic;Persist Security Info=True;User ID=sa;Password=88888888"/>-->
+    <StorageProviders>
+      <Provider Type="Orleans.Storage.AdoNetStorageProvider" Name="OrleansTest" DataConnectionString="Server=DESKTOP-08HR6NP;Database=OrleansBasic;User Id=sa;Password=88888888;"  />
+    </StorageProviders>
+  </Globals>
+  <Defaults>
+    <!--本节点开放的端口,这个端口是用来与silo互动的-->
+    <Networking Address="localhost" Port="11111" />
+
+    <!--本节点开放的服务端口,这个端口是用来与client互动的-->
+    <ProxyingGateway Address="localhost" Port="30000" />
+  </Defaults>
+</OrleansConfiguration>
