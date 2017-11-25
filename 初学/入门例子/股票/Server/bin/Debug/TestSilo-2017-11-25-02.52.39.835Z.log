@@ -1,0 +1,505 @@
+[2017-11-25 02:52:40.237 GMT     1	INFO   	100404	Silo	127.0.0.1:2233]	Silo starting with GC settings: ServerGC=False GCLatencyMode=Interactive	
+[2017-11-25 02:52:40.256 GMT     1	WARNING	100405	Silo	127.0.0.1:2233]	Note: Silo not running with ServerGC turned on or with GCLatencyMode.Batch enabled - recommend checking app config : <configuration>-<runtime>-<gcServer enabled="true"> and <configuration>-<runtime>-<gcConcurrent enabled="false"/>	
+[2017-11-25 02:52:40.257 GMT     1	WARNING	100405	Silo	127.0.0.1:2233]	Note: ServerGC only kicks in on multi-core systems (settings enabling ServerGC have no effect on single-core machines).	
+[2017-11-25 02:52:40.258 GMT     1	INFO   	100403	Silo	127.0.0.1:2233]	-------------- Initializing Primary silo on host DESKTOP-08HR6NP MachineName DESKTOP-08HR6NP at 127.0.0.1:2233, gen 249274360 --------------	
+[2017-11-25 02:52:40.274 GMT     1	INFO   	100415	Silo	127.0.0.1:2233]	Starting silo TestSilo with the following configuration= 
+Config File Name: 
+Host: DESKTOP-08HR6NP
+Start time: 2017-11-25 02:52:40.259 GMT
+Primary node: 127.0.0.1:2233
+Platform version info:
+   Orleans version: 1.5.2.0 (Release).
+   .NET version: 4.0.30319.42000
+   OS version: Microsoft Windows NT 6.2.9200.0
+   App config file: G:\Zupo\Git\LC-Project\Orleans\初学\官方教程\股票\Server\bin\Debug\Server.exe.Config
+   GC Type=Client GCLatencyMode=Interactive
+Global configuration:
+   System Ids:
+      ServiceId: 00000000-0000-0000-0000-000000000000
+      DeploymentId: 
+   Subnet: 
+   Seed nodes: 127.0.0.1:2233
+   Messaging:
+       Response timeout: 00:30:00
+       Maximum resend count: 0
+       Resend On Timeout: False
+       Maximum Socket Age: 10675199.02:48:05.4775807
+       Drop Expired Messages: True
+       Silo Sender queues: 8
+       Gateway Sender queues: 8
+       Client Drop Timeout: 00:01:00
+       Buffer Pool Buffer Size: 4096
+       Buffer Pool Max Size: 10000
+       Buffer Pool Preallocation Size: 250
+       Maximum forward count: 2
+       Fallback serializer: 
+   Liveness:
+      LivenessEnabled: True
+      LivenessType: MembershipTableGrain
+      ProbeTimeout: 00:00:10
+      TableRefreshTimeout: 00:01:00
+      DeathVoteExpirationTimeout: 00:02:00
+      NumMissedProbesLimit: 3
+      NumProbedSilos: 3
+      NumVotesForDeathDeclaration: 2
+      UseLivenessGossip: True
+      ValidateInitialConnectivity: True
+      IAmAliveTablePublishTimeout: 00:05:00
+      NumMissedTableIAmAliveLimit: 2
+      MaxJoinAttemptTime: 00:05:00
+      ExpectedClusterSize: 20
+   MultiClusterNetwork: N/A
+   SystemStore:
+      SystemStore ConnectionString: null
+      Reminders ConnectionString: null
+   Application:
+      Defaults:
+         Deactivate if idle for: 02:00:00
+
+   PlacementStrategy: 
+         Default Placement Strategy: RandomPlacement
+         Deployment Load Publisher Refresh Time: 00:00:01
+         Activation CountBased Placement Choose Out Of: 2
+   Grain directory cache:
+      Maximum size: 1000000 grains
+      Initial TTL: 00:00:30
+      Maximum TTL: 00:04:00
+      TTL extension factor: 2.00
+      Directory Caching Strategy: Adaptive
+   Grain directory:
+      Lazy deregistration delay: 00:01:00
+      Client registration refresh: 00:05:00
+   Reminder Service:
+       ReminderServiceType: ReminderTableGrain
+   Consistent Ring:
+       Use Virtual Buckets Consistent Ring: True
+       Num Virtual Buckets Consistent Ring: 30
+   Providers:
+       No providers configured.
+Silo configuration:
+   Silo Name: TestSilo
+   Generation: 249274360
+   Host Name or IP Address: localhost
+   DNS Host Name: DESKTOP-08HR6NP
+   Port: 2233
+   Subnet: 
+   Preferred Address Family: InterNetwork
+   Proxy Gateway: 127.0.0.1:1234
+   IsPrimaryNode: True
+   Scheduler: 
+         Max Active Threads: 8
+         Processor Count: 8
+         Delay Warning Threshold: 00:00:10
+         Activation Scheduling Quantum: 00:00:00.1000000
+         Turn Warning Length Threshold: 00:00:00.2000000
+         Inject More Worker Threads: False
+         MinDotNetThreadPoolSize: 200
+         .NET thread pool sizes - Min: Worker Threads=8 Completion Port Threads=8
+         .NET thread pool sizes - Max: Worker Threads=2047 Completion Port Threads=1000
+         .NET ServicePointManager - DefaultConnectionLimit=200 Expect100Continue=False UseNagleAlgorithm=False
+   Load Shedding Enabled: False
+   Load Shedding Limit: 95
+   SiloShutdownEventName: 
+   Debug: 
+   Tracing: 
+     Default Trace Level: Info
+     TraceLevelOverrides: None
+     Trace to Console: True
+     Trace File Name: G:\Zupo\Git\LC-Project\Orleans\初学\官方教程\股票\Server\bin\Debug\TestSilo-2017-11-25-02.52.39.835Z.log
+     LargeMessageWarningThreshold: 85000
+     PropagateActivityId: False
+     BulkMessageLimit: 5
+   Statistics: 
+     MetricsTableWriteInterval: 00:00:30
+     PerfCounterWriteInterval: 00:00:30
+     LogWriteInterval: 00:05:00
+     WriteLogStatisticsToTable: True
+     StatisticsCollectionLevel: Info
+
+	
+[2017-11-25 02:52:42.816 GMT     1	INFO   	100000	AssemblyLoader.Silo	127.0.0.1:2233]	Searching for assemblies in G:\Zupo\Git\LC-Project\Orleans\初学\官方教程\股票\Server\bin\Debug...	
+[2017-11-25 02:52:42.888 GMT     1	INFO   	100000	AssemblyLoader.Silo	127.0.0.1:2233]	User assembly ignored: G:\Zupo\Git\LC-Project\Orleans\初学\官方教程\股票\Server\bin\Debug\IGrains.dll
+	* Assembly does not contain any acceptable grain types.
+	* Assembly contains no types assignable from Orleans.Providers.IProvider.	
+[2017-11-25 02:52:43.443 GMT     1	INFO   	100000	AssemblyLoader.Silo	127.0.0.1:2233]	User assembly ignored: G:\Zupo\Git\LC-Project\Orleans\初学\官方教程\股票\Server\bin\Debug\Microsoft.CodeAnalysis.CSharp.dll
+	* Assembly does not contain any acceptable grain types.
+	* Assembly contains no types assignable from Orleans.Providers.IProvider.	
+[2017-11-25 02:52:43.632 GMT     1	INFO   	100000	AssemblyLoader.Silo	127.0.0.1:2233]	User assembly ignored: G:\Zupo\Git\LC-Project\Orleans\初学\官方教程\股票\Server\bin\Debug\Microsoft.CodeAnalysis.dll
+	* Assembly does not contain any acceptable grain types.
+	* Assembly contains no types assignable from Orleans.Providers.IProvider.	
+[2017-11-25 02:52:43.636 GMT     1	INFO   	100000	AssemblyLoader.Silo	127.0.0.1:2233]	User assembly ignored: G:\Zupo\Git\LC-Project\Orleans\初学\官方教程\股票\Server\bin\Debug\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+	* Assembly does not contain any acceptable grain types.
+	* Assembly contains no types assignable from Orleans.Providers.IProvider.	
+[2017-11-25 02:52:43.669 GMT     1	INFO   	100000	AssemblyLoader.Silo	127.0.0.1:2233]	User assembly ignored: G:\Zupo\Git\LC-Project\Orleans\初学\官方教程\股票\Server\bin\Debug\Microsoft.Extensions.DependencyInjection.dll
+	* Assembly does not contain any acceptable grain types.
+	* Assembly contains no types assignable from Orleans.Providers.IProvider.	
+[2017-11-25 02:52:43.671 GMT     1	INFO   	100000	AssemblyLoader.Silo	127.0.0.1:2233]	User assembly ignored: G:\Zupo\Git\LC-Project\Orleans\初学\官方教程\股票\Server\bin\Debug\Microsoft.Win32.Primitives.dll
+	* Assembly does not contain any acceptable grain types.
+	* Assembly contains no types assignable from Orleans.Providers.IProvider.	
+[2017-11-25 02:52:43.692 GMT     1	INFO   	100000	AssemblyLoader.Silo	127.0.0.1:2233]	User assembly ignored: G:\Zupo\Git\LC-Project\Orleans\初学\官方教程\股票\Server\bin\Debug\Newtonsoft.Json.dll
+	* Assembly does not contain any acceptable grain types.
+	* Assembly contains no types assignable from Orleans.Providers.IProvider.	
+[2017-11-25 02:52:43.695 GMT     1	INFO   	100000	AssemblyLoader.Silo	127.0.0.1:2233]	User assembly ignored: G:\Zupo\Git\LC-Project\Orleans\初学\官方教程\股票\Server\bin\Debug\Orleans.dll
+	* Assembly filename is excluded.	
+[2017-11-25 02:52:43.697 GMT     1	INFO   	100000	AssemblyLoader.Silo	127.0.0.1:2233]	User assembly ignored: G:\Zupo\Git\LC-Project\Orleans\初学\官方教程\股票\Server\bin\Debug\OrleansCodeGenerator.dll
+	* Assembly does not contain any acceptable grain types.
+	* Assembly contains no types assignable from Orleans.Providers.IProvider.	
+[2017-11-25 02:52:43.706 GMT     1	INFO   	100000	AssemblyLoader.Silo	127.0.0.1:2233]	User assembly ignored: G:\Zupo\Git\LC-Project\Orleans\初学\官方教程\股票\Server\bin\Debug\OrleansRuntime.dll
+	* Assembly filename is excluded.	
+[2017-11-25 02:52:43.728 GMT     1	INFO   	100000	AssemblyLoader.Silo	127.0.0.1:2233]	User assembly ignored: G:\Zupo\Git\LC-Project\Orleans\初学\官方教程\股票\Server\bin\Debug\OrleansTelemetryConsumers.Counters.dll
+	* Assembly does not contain any acceptable grain types.
+	* Assembly contains no types assignable from Orleans.Providers.IProvider.	
+[2017-11-25 02:52:43.730 GMT     1	INFO   	100000	AssemblyLoader.Silo	127.0.0.1:2233]	User assembly ignored: G:\Zupo\Git\LC-Project\Orleans\初学\官方教程\股票\Server\bin\Debug\System.AppContext.dll
+	* Assembly does not contain any acceptable grain types.
+	* Assembly contains no types assignable from Orleans.Providers.IProvider.	
+[2017-11-25 02:52:43.746 GMT     1	INFO   	100000	AssemblyLoader.Silo	127.0.0.1:2233]	User assembly ignored: G:\Zupo\Git\LC-Project\Orleans\初学\官方教程\股票\Server\bin\Debug\System.Collections.Immutable.dll
+	* Assembly does not contain any acceptable grain types.
+	* Assembly contains no types assignable from Orleans.Providers.IProvider.	
+[2017-11-25 02:52:43.747 GMT     1	INFO   	100000	AssemblyLoader.Silo	127.0.0.1:2233]	User assembly ignored: G:\Zupo\Git\LC-Project\Orleans\初学\官方教程\股票\Server\bin\Debug\System.Console.dll
+	* Assembly does not contain any acceptable grain types.
+	* Assembly contains no types assignable from Orleans.Providers.IProvider.	
+[2017-11-25 02:52:43.764 GMT     1	INFO   	100000	AssemblyLoader.Silo	127.0.0.1:2233]	User assembly ignored: G:\Zupo\Git\LC-Project\Orleans\初学\官方教程\股票\Server\bin\Debug\System.Diagnostics.DiagnosticSource.dll
+	* Assembly does not contain any acceptable grain types.
+	* Assembly contains no types assignable from Orleans.Providers.IProvider.	
+[2017-11-25 02:52:43.767 GMT     1	INFO   	100000	AssemblyLoader.Silo	127.0.0.1:2233]	User assembly ignored: G:\Zupo\Git\LC-Project\Orleans\初学\官方教程\股票\Server\bin\Debug\System.Diagnostics.FileVersionInfo.dll
+	* Assembly does not contain any acceptable grain types.
+	* Assembly contains no types assignable from Orleans.Providers.IProvider.	
+[2017-11-25 02:52:43.769 GMT     1	INFO   	100000	AssemblyLoader.Silo	127.0.0.1:2233]	User assembly ignored: G:\Zupo\Git\LC-Project\Orleans\初学\官方教程\股票\Server\bin\Debug\System.Diagnostics.StackTrace.dll
+	* Assembly does not contain any acceptable grain types.
+	* Assembly contains no types assignable from Orleans.Providers.IProvider.	
+[2017-11-25 02:52:43.771 GMT     1	INFO   	100000	AssemblyLoader.Silo	127.0.0.1:2233]	User assembly ignored: G:\Zupo\Git\LC-Project\Orleans\初学\官方教程\股票\Server\bin\Debug\System.Globalization.Calendars.dll
+	* Assembly does not contain any acceptable grain types.
+	* Assembly contains no types assignable from Orleans.Providers.IProvider.	
+[2017-11-25 02:52:43.773 GMT     1	INFO   	100000	AssemblyLoader.Silo	127.0.0.1:2233]	User assembly ignored: G:\Zupo\Git\LC-Project\Orleans\初学\官方教程\股票\Server\bin\Debug\System.IO.Compression.dll
+	* Assembly does not contain any acceptable grain types.
+	* Assembly contains no types assignable from Orleans.Providers.IProvider.	
+[2017-11-25 02:52:43.776 GMT     1	INFO   	100000	AssemblyLoader.Silo	127.0.0.1:2233]	User assembly ignored: G:\Zupo\Git\LC-Project\Orleans\初学\官方教程\股票\Server\bin\Debug\System.IO.Compression.ZipFile.dll
+	* Assembly does not contain any acceptable grain types.
+	* Assembly contains no types assignable from Orleans.Providers.IProvider.	
+[2017-11-25 02:52:43.777 GMT     1	INFO   	100000	AssemblyLoader.Silo	127.0.0.1:2233]	User assembly ignored: G:\Zupo\Git\LC-Project\Orleans\初学\官方教程\股票\Server\bin\Debug\System.IO.FileSystem.dll
+	* Assembly does not contain any acceptable grain types.
+	* Assembly contains no types assignable from Orleans.Providers.IProvider.	
+[2017-11-25 02:52:43.779 GMT     1	INFO   	100000	AssemblyLoader.Silo	127.0.0.1:2233]	User assembly ignored: G:\Zupo\Git\LC-Project\Orleans\初学\官方教程\股票\Server\bin\Debug\System.IO.FileSystem.Primitives.dll
+	* Assembly does not contain any acceptable grain types.
+	* Assembly contains no types assignable from Orleans.Providers.IProvider.	
+[2017-11-25 02:52:43.788 GMT     1	INFO   	100000	AssemblyLoader.Silo	127.0.0.1:2233]	User assembly ignored: G:\Zupo\Git\LC-Project\Orleans\初学\官方教程\股票\Server\bin\Debug\System.Net.Http.dll
+	* Assembly does not contain any acceptable grain types.
+	* Assembly contains no types assignable from Orleans.Providers.IProvider.	
+[2017-11-25 02:52:43.791 GMT     1	INFO   	100000	AssemblyLoader.Silo	127.0.0.1:2233]	User assembly ignored: G:\Zupo\Git\LC-Project\Orleans\初学\官方教程\股票\Server\bin\Debug\System.Net.Sockets.dll
+	* Assembly does not contain any acceptable grain types.
+	* Assembly contains no types assignable from Orleans.Providers.IProvider.	
+[2017-11-25 02:52:43.816 GMT     1	INFO   	100000	AssemblyLoader.Silo	127.0.0.1:2233]	User assembly ignored: G:\Zupo\Git\LC-Project\Orleans\初学\官方教程\股票\Server\bin\Debug\System.Reflection.Metadata.dll
+	* Assembly does not contain any acceptable grain types.
+	* Assembly contains no types assignable from Orleans.Providers.IProvider.	
+[2017-11-25 02:52:43.819 GMT     1	INFO   	100000	AssemblyLoader.Silo	127.0.0.1:2233]	User assembly ignored: G:\Zupo\Git\LC-Project\Orleans\初学\官方教程\股票\Server\bin\Debug\System.Runtime.InteropServices.RuntimeInformation.dll
+	* Assembly does not contain any acceptable grain types.
+	* Assembly contains no types assignable from Orleans.Providers.IProvider.	
+[2017-11-25 02:52:43.821 GMT     1	INFO   	100000	AssemblyLoader.Silo	127.0.0.1:2233]	User assembly ignored: G:\Zupo\Git\LC-Project\Orleans\初学\官方教程\股票\Server\bin\Debug\System.Security.Cryptography.Algorithms.dll
+	* Assembly does not contain any acceptable grain types.
+	* Assembly contains no types assignable from Orleans.Providers.IProvider.	
+[2017-11-25 02:52:43.822 GMT     1	INFO   	100000	AssemblyLoader.Silo	127.0.0.1:2233]	User assembly ignored: G:\Zupo\Git\LC-Project\Orleans\初学\官方教程\股票\Server\bin\Debug\System.Security.Cryptography.Encoding.dll
+	* Assembly does not contain any acceptable grain types.
+	* Assembly contains no types assignable from Orleans.Providers.IProvider.	
+[2017-11-25 02:52:43.824 GMT     1	INFO   	100000	AssemblyLoader.Silo	127.0.0.1:2233]	User assembly ignored: G:\Zupo\Git\LC-Project\Orleans\初学\官方教程\股票\Server\bin\Debug\System.Security.Cryptography.Primitives.dll
+	* Assembly does not contain any acceptable grain types.
+	* Assembly contains no types assignable from Orleans.Providers.IProvider.	
+[2017-11-25 02:52:43.825 GMT     1	INFO   	100000	AssemblyLoader.Silo	127.0.0.1:2233]	User assembly ignored: G:\Zupo\Git\LC-Project\Orleans\初学\官方教程\股票\Server\bin\Debug\System.Security.Cryptography.X509Certificates.dll
+	* Assembly does not contain any acceptable grain types.
+	* Assembly contains no types assignable from Orleans.Providers.IProvider.	
+[2017-11-25 02:52:43.829 GMT     1	INFO   	100000	AssemblyLoader.Silo	127.0.0.1:2233]	User assembly ignored: G:\Zupo\Git\LC-Project\Orleans\初学\官方教程\股票\Server\bin\Debug\System.Text.Encoding.CodePages.dll
+	* Assembly does not contain any acceptable grain types.
+	* Assembly contains no types assignable from Orleans.Providers.IProvider.	
+[2017-11-25 02:52:43.831 GMT     1	INFO   	100000	AssemblyLoader.Silo	127.0.0.1:2233]	User assembly ignored: G:\Zupo\Git\LC-Project\Orleans\初学\官方教程\股票\Server\bin\Debug\System.Threading.Thread.dll
+	* Assembly does not contain any acceptable grain types.
+	* Assembly contains no types assignable from Orleans.Providers.IProvider.	
+[2017-11-25 02:52:43.834 GMT     1	INFO   	100000	AssemblyLoader.Silo	127.0.0.1:2233]	User assembly ignored: G:\Zupo\Git\LC-Project\Orleans\初学\官方教程\股票\Server\bin\Debug\System.ValueTuple.dll
+	* Assembly does not contain any acceptable grain types.
+	* Assembly contains no types assignable from Orleans.Providers.IProvider.	
+[2017-11-25 02:52:43.837 GMT     1	INFO   	100000	AssemblyLoader.Silo	127.0.0.1:2233]	User assembly ignored: G:\Zupo\Git\LC-Project\Orleans\初学\官方教程\股票\Server\bin\Debug\System.Xml.ReaderWriter.dll
+	* Assembly does not contain any acceptable grain types.
+	* Assembly contains no types assignable from Orleans.Providers.IProvider.	
+[2017-11-25 02:52:43.839 GMT     1	INFO   	100000	AssemblyLoader.Silo	127.0.0.1:2233]	User assembly ignored: G:\Zupo\Git\LC-Project\Orleans\初学\官方教程\股票\Server\bin\Debug\System.Xml.XmlDocument.dll
+	* Assembly does not contain any acceptable grain types.
+	* Assembly contains no types assignable from Orleans.Providers.IProvider.	
+[2017-11-25 02:52:43.841 GMT     1	INFO   	100000	AssemblyLoader.Silo	127.0.0.1:2233]	User assembly ignored: G:\Zupo\Git\LC-Project\Orleans\初学\官方教程\股票\Server\bin\Debug\System.Xml.XPath.dll
+	* Assembly does not contain any acceptable grain types.
+	* Assembly contains no types assignable from Orleans.Providers.IProvider.	
+[2017-11-25 02:52:43.842 GMT     1	INFO   	100000	AssemblyLoader.Silo	127.0.0.1:2233]	User assembly ignored: G:\Zupo\Git\LC-Project\Orleans\初学\官方教程\股票\Server\bin\Debug\System.Xml.XPath.XDocument.dll
+	* Assembly does not contain any acceptable grain types.
+	* Assembly contains no types assignable from Orleans.Providers.IProvider.	
+[2017-11-25 02:52:43.843 GMT     1	WARNING	101705	AssemblyLoader.Silo	127.0.0.1:2233]	Unable to find directory G:\Zupo\Git\LC-Project\Orleans\初学\官方教程\股票\Server\bin\Debug\Applications; skipping.	
+[2017-11-25 02:52:43.844 GMT     1	INFO   	100000	AssemblyLoader.Silo	127.0.0.1:2233]	Loading assembly G:\Zupo\Git\LC-Project\Orleans\初学\官方教程\股票\Server\bin\Debug\Grains.dll...	
+[2017-11-25 02:52:46.442 GMT     1	INFO   	100000	AssemblyLoader.Silo	127.0.0.1:2233]	Loading assembly G:\Zupo\Git\LC-Project\Orleans\初学\官方教程\股票\Server\bin\Debug\OrleansProviders.dll...	
+[2017-11-25 02:52:46.459 GMT     1	INFO   	100000	AssemblyLoader.Silo	127.0.0.1:2233]	2 assemblies loaded.	
+[2017-11-25 02:52:48.139 GMT     1	INFO   	100000	Scheduler.OrleansTaskScheduler	127.0.0.1:2233]	Starting OrleansTaskScheduler with 8 Max Active application Threads and 1 system thread.	
+[2017-11-25 02:52:48.180 GMT     1	INFO   	101010	Runtime.Messaging.IncomingMessageAcceptor	127.0.0.1:2233]	Opened a listening socket at address 127.0.0.1:2233	
+[2017-11-25 02:52:48.187 GMT     1	INFO   	101010	Runtime.Messaging.GatewayAcceptor	127.0.0.1:2233]	Opened a listening socket at address 127.0.0.1:1234	
+[2017-11-25 02:52:48.252 GMT     1	INFO   	100000	VirtualBucketsRingProvider	127.0.0.1:2233]	Starting VirtualBucketsRingProvider on silo S127.0.0.1:2233:249274360/xDF12CA21.	
+[2017-11-25 02:52:48.277 GMT     1	INFO   	103003	VirtualBucketsRingProvider	127.0.0.1:2233]	Added Server S127.0.0.1:2233:249274360/xDF12CA21. Current view: [S127.0.0.1:2233:249274360 -> <MultiRange: Size=x100000000, %Ring=100.000%>]	
+[2017-11-25 02:52:48.280 GMT     1	INFO   	103005	VirtualBucketsRingProvider	127.0.0.1:2233]	-NotifyLocalRangeSubscribers about old <(0 0], Size=x100000000, %Ring=100.000%> new <MultiRange: Size=x100000000, %Ring=100.000%> increased? True	
+[2017-11-25 02:52:48.304 GMT     1	INFO   	100000	Silo	127.0.0.1:2233]	Skip multicluster oracle creation (no multicluster network configured)	
+[2017-11-25 02:52:48.306 GMT     1	INFO   	100422	Silo	127.0.0.1:2233]	-------------- Started silo S127.0.0.1:2233:249274360, ConsistentHashCode DF12CA21 --------------	
+[2017-11-25 02:52:48.307 GMT     1	INFO   	100288	OrleansSiloHost	127.0.0.1:2233]	Successfully initialized Orleans silo 'TestSilo' as a Primary node.	
+[2017-11-25 02:52:48.310 GMT     1	INFO   	100441	OrleansSiloHost	127.0.0.1:2233]	Silo shutdown event name: TestSilo-Shutdown	
+[2017-11-25 02:52:48.311 GMT     1	INFO   	100442	OrleansSiloHost	127.0.0.1:2233]	Created and set shutdown event TestSilo-Shutdown	
+[2017-11-25 02:52:48.316 GMT     1	INFO   	100401	Silo	127.0.0.1:2233]	Silo Start()	
+[2017-11-25 02:52:48.319 GMT     1	INFO   	100430	Silo	127.0.0.1:2233]	Configured ThreadPool.SetMinThreads() to values: 200,200. Previous values are: 8,8.	
+[2017-11-25 02:52:48.320 GMT     1	INFO   	100436	Silo	127.0.0.1:2233]	Configured .NET ServicePointManager to Expect100Continue=False, DefaultConnectionLimit=200, UseNagleAlgorithm=False to improve Azure storage performance.	
+[2017-11-25 02:52:48.371 GMT     1	INFO   	101711	AssemblyLoader.Silo	127.0.0.1:2233]	Loaded grain type summary for 9 types: 
+Grain class Grains.Grains.StockGrain [180695803 (0xAC532FB)] from Grains.dll implementing interfaces: IGrains.IGrains.IStockGrain [-1599206 (0xFFE7991A)], Orleans.Orleans.IGrainWithStringKey [-1277021679 (0xB3E23211)]
+Grain class Orleans.LogConsistency.Orleans.LogConsistency.LogConsistentGrainBase<TView> [-2062750837 (0x850CEB8B)] from Orleans.dll implementing interfaces: 
+Grain class Orleans.Providers.Orleans.Providers.MemoryStreamQueueGrain [1359359215 (0x51062CEF)] from OrleansProviders.dll implementing interfaces: Orleans.Providers.Orleans.Providers.IMemoryStreamQueueGrain [1158152105 (0x4507FFA9)]
+Grain class Orleans.Runtime.Management.Orleans.Runtime.Management.ManagementGrain [1954798034 (0x7483D9D2)] from OrleansRuntime.dll implementing interfaces: Orleans.Runtime.Orleans.Runtime.IManagementGrain [-1734666656 (0x989B1660)]
+Grain class Orleans.Runtime.MembershipService.Orleans.Runtime.MembershipService.GrainBasedMembershipTable [-2103923544 (0x8298ACA8)] from OrleansRuntime.dll implementing interfaces: Orleans.Orleans.IMembershipTableGrain [-1256503757 (0xB51B4633)]
+Grain class Orleans.Runtime.ReminderService.Orleans.Runtime.ReminderService.GrainBasedReminderTable [-55315191 (0xFCB3F509)] from OrleansRuntime.dll implementing interfaces: Orleans.Orleans.IReminderTableGrain [-1135060418 (0xBC585A3E)]
+Grain class Orleans.Runtime.Versions.Orleans.Runtime.Versions.VersionStoreGrain [331003096 (0x13BAB4D8)] from OrleansRuntime.dll implementing interfaces: Orleans.Runtime.Versions.Orleans.Runtime.Versions.IVersionStoreGrain [-297600501 (0xEE42FA0B)], Orleans.Orleans.IGrainWithStringKey [-1277021679 (0xB3E23211)]
+Grain class Orleans.Storage.Orleans.Storage.MemoryStorageGrain [819348208 (0x30D642F0)] from OrleansRuntime.dll implementing interfaces: Orleans.Storage.Orleans.Storage.IMemoryStorageGrain [577125491 (0x22663C73)]
+Grain class Orleans.Streams.Orleans.Streams.PubSubRendezvousGrain [1903070868 (0x716E8E94)] from OrleansRuntime.dll implementing interfaces: Orleans.Streams.Orleans.Streams.IPubSubRendezvousGrain [1746702088 (0x681C8F08)]
+	
+[2017-11-25 02:52:48.393 GMT    12	INFO   	100000	Runtime.Scheduler.WorkerPoolThread/0	127.0.0.1:2233]	Starting AsyncAgent Runtime.Scheduler.WorkerPoolThread/0 on managed thread 12	
+[2017-11-25 02:52:48.455 GMT    15	INFO   	100000	Runtime.Scheduler.WorkerPoolThread/3	127.0.0.1:2233]	Starting AsyncAgent Runtime.Scheduler.WorkerPoolThread/3 on managed thread 15	
+[2017-11-25 02:52:48.393 GMT    20	INFO   	100000	Runtime.Scheduler.WorkerPoolThread/System.9	127.0.0.1:2233]	Starting AsyncAgent Runtime.Scheduler.WorkerPoolThread/System.9 on managed thread 20	
+[2017-11-25 02:52:48.540 GMT    18	INFO   	100000	Runtime.Scheduler.WorkerPoolThread/6	127.0.0.1:2233]	Starting AsyncAgent Runtime.Scheduler.WorkerPoolThread/6 on managed thread 18	
+[2017-11-25 02:52:48.475 GMT    16	INFO   	100000	Runtime.Scheduler.WorkerPoolThread/4	127.0.0.1:2233]	Starting AsyncAgent Runtime.Scheduler.WorkerPoolThread/4 on managed thread 16	
+[2017-11-25 02:52:48.434 GMT    14	INFO   	100000	Runtime.Scheduler.WorkerPoolThread/2	127.0.0.1:2233]	Starting AsyncAgent Runtime.Scheduler.WorkerPoolThread/2 on managed thread 14	
+[2017-11-25 02:52:48.413 GMT    13	INFO   	100000	Runtime.Scheduler.WorkerPoolThread/1	127.0.0.1:2233]	Starting AsyncAgent Runtime.Scheduler.WorkerPoolThread/1 on managed thread 13	
+[2017-11-25 02:52:48.497 GMT    17	INFO   	100000	Runtime.Scheduler.WorkerPoolThread/5	127.0.0.1:2233]	Starting AsyncAgent Runtime.Scheduler.WorkerPoolThread/5 on managed thread 17	
+[2017-11-25 02:52:48.587 GMT    21	INFO   	100000	Runtime.Messaging.IncomingMessageAcceptor	127.0.0.1:2233]	Starting AsyncAgent Runtime.Messaging.IncomingMessageAcceptor on managed thread 21	
+[2017-11-25 02:52:48.638 GMT    23	INFO   	100000	Runtime.Messaging.SiloMessageSender/SystemSender	127.0.0.1:2233]	Starting AsyncAgent Runtime.Messaging.SiloMessageSender/SystemSender on managed thread 23	
+[2017-11-25 02:52:48.613 GMT    22	INFO   	100000	Runtime.Messaging.SiloMessageSender/PingSender	127.0.0.1:2233]	Starting AsyncAgent Runtime.Messaging.SiloMessageSender/PingSender on managed thread 22	
+[2017-11-25 02:52:48.564 GMT    19	INFO   	100000	Runtime.Scheduler.WorkerPoolThread/7	127.0.0.1:2233]	Starting AsyncAgent Runtime.Scheduler.WorkerPoolThread/7 on managed thread 19	
+[2017-11-25 02:52:48.684 GMT    29	INFO   	100000	Runtime.Messaging.IncomingMessageAgent/Ping	127.0.0.1:2233]	Starting AsyncAgent Runtime.Messaging.IncomingMessageAgent/Ping on managed thread 29	
+[2017-11-25 02:52:48.727 GMT    30	INFO   	100000	Runtime.Messaging.IncomingMessageAgent/Application	127.0.0.1:2233]	Starting AsyncAgent Runtime.Messaging.IncomingMessageAgent/Application on managed thread 30	
+[2017-11-25 02:52:48.749 GMT     1	INFO   	100000	Orleans.GrainDirectory.LocalGrainDirectory	127.0.0.1:2233]	Start (SeverityLevel=Info)	
+[2017-11-25 02:52:48.706 GMT    28	INFO   	100000	Runtime.Messaging.IncomingMessageAgent/System	127.0.0.1:2233]	Starting AsyncAgent Runtime.Messaging.IncomingMessageAgent/System on managed thread 28	
+[2017-11-25 02:52:48.773 GMT    21	INFO   	100328	Runtime.Messaging.IncomingMessageAcceptor	127.0.0.1:2233]	Stopping AsyncAgent Runtime.Messaging.IncomingMessageAcceptor that runs on managed thread 21	
+[2017-11-25 02:52:48.797 GMT    26	INFO   	100000	Runtime.GrainDirectory.AdaptiveDirectoryCacheMaintainer`1	127.0.0.1:2233]	Starting AsyncAgent Runtime.GrainDirectory.AdaptiveDirectoryCacheMaintainer`1 on managed thread 26	
+[2017-11-25 02:52:48.800 GMT    27	INFO   	100000	Runtime.GrainDirectory.GlobalSingleInstanceActivationMaintainer	127.0.0.1:2233]	Starting AsyncAgent Runtime.GrainDirectory.GlobalSingleInstanceActivationMaintainer on managed thread 27	
+[2017-11-25 02:52:48.807 GMT    27	INFO   	100328	Runtime.GrainDirectory.GlobalSingleInstanceActivationMaintainer	127.0.0.1:2233]	Stopping AsyncAgent Runtime.GrainDirectory.GlobalSingleInstanceActivationMaintainer that runs on managed thread 27	
+[2017-11-25 02:52:48.841 GMT     1	INFO   	100000	ReminderFactory	127.0.0.1:2233]	Creating reminder grain service for type=Orleans.OrleansCodeGenReminderTableGrainReference	
+[2017-11-25 02:52:48.868 GMT    17	INFO   	100507	Catalog	127.0.0.1:2233]	Before collection#1: memory=10MB, #activations=0, collector=<#Activations=0, #Buckets=0, buckets=[]>.	
+[2017-11-25 02:52:48.869 GMT    15	INFO   	100603	MembershipOracle	127.0.0.1:2233]	MembershipOracle starting on host = DESKTOP-08HR6NP address = S127.0.0.1:2233:249274360 at 2017-11-25 02:52:48.196 GMT, backOffMax = 00:00:20	
+[2017-11-25 02:52:48.893 GMT    17	INFO   	100508	Catalog	127.0.0.1:2233]	After collection#1: memory=10MB, #activations=0, collected 0 activations, collector=<#Activations=0, #Buckets=0, buckets=[]>, collection time=00:00:00.0288536.	
+[2017-11-25 02:52:48.897 GMT    15	INFO   	100635	MembershipTableFactory	127.0.0.1:2233]	Creating membership table grain	
+[2017-11-25 02:52:48.929 GMT    17	INFO   	100637	GrainBasedMembershipTable	127.0.0.1:2233]	GrainBasedMembershipTable Activated.	
+[2017-11-25 02:52:48.996 GMT    20	INFO   	100631	MembershipTableFactory	127.0.0.1:2233]	-Connected to membership table provider.	
+[2017-11-25 02:52:49.027 GMT    12	INFO   	100000	GrainBasedMembershipTable	127.0.0.1:2233]	InitializeMembershipTable True.	
+[2017-11-25 02:52:55.806 GMT    13	INFO   	100652	MembershipOracle	127.0.0.1:2233]	-CleanupTable called on silo startup. Membership table 0 silos, 0 are Active, 0 are Dead, Version=<0, 0>. All silos: []	
+[2017-11-25 02:52:55.834 GMT    13	INFO   	100660	MembershipOracle	127.0.0.1:2233]	Starting IAmAliveUpdateTimer.	
+[2017-11-25 02:52:55.845 GMT    13	INFO   	100604	MembershipOracle	127.0.0.1:2233]	-BecomeActive	
+[2017-11-25 02:52:55.851 GMT    13	INFO   	100614	MembershipOracle	127.0.0.1:2233]	About to send pings to 0 nodes in order to validate communication in the Joining state. Pinged nodes = []	
+[2017-11-25 02:52:55.859 GMT    20	INFO   	100634	MembershipOracle	127.0.0.1:2233]	-ReadAll (called from BecomeActive) Membership table 1 silos, 1 are Active, 0 are Dead, Version=<2, 5>. All silos: [SiloAddress=S127.0.0.1:2233:249274360 SiloName=TestSilo Status=Active]	
+[2017-11-25 02:52:55.864 GMT    20	INFO   	100605	MembershipOracle	127.0.0.1:2233]	-Finished BecomeActive.	
+[2017-11-25 02:52:55.871 GMT    20	INFO   	100000	TypeManager	127.0.0.1:2233]	OnRefreshClusterMapTimer: refresh start	
+[2017-11-25 02:52:55.876 GMT     1	INFO   	100702	WindowsPerfCountersStatistics	127.0.0.1:2233]	Starting Windows perf counter stats collection with frequency=00:00:30	
+[2017-11-25 02:52:55.902 GMT     1	INFO   	100714	SiloPerformanceMetrics	127.0.0.1:2233]	Starting Silo Table metrics reporter with reportFrequency=00:00:30	
+[2017-11-25 02:52:55.907 GMT    20	INFO   	100000	DeploymentLoadPublisher	127.0.0.1:2233]	Starting DeploymentLoadPublisher.	
+[2017-11-25 02:52:55.962 GMT    20	INFO   	100000	DeploymentLoadPublisher	127.0.0.1:2233]	Started DeploymentLoadPublisher.	
+[2017-11-25 02:52:55.965 GMT     1	INFO   	100000	Watchdog	127.0.0.1:2233]	Starting Silo Watchdog.	
+[2017-11-25 02:52:55.968 GMT    32	INFO   	100000	Runtime.Watchdog	127.0.0.1:2233]	Starting AsyncAgent Runtime.Watchdog on managed thread 32	
+[2017-11-25 02:52:56.006 GMT    18	INFO   	100000	GrainBasedReminderTable_S127.0.0.1:2233:249274360*grn/FCB3F509/00003039@4df06ebe	127.0.0.1:2233]	GrainBasedReminderTable *grn/FCB3F509/00003039 Activated. Full identity: [ActivationAddress: S127.0.0.1:2233:249274360*grn/FCB3F509/00003039@4df06ebe, Full GrainId: [GrainId: *grn/FCB3F509/0000000000000000000000000000303903fffffffcb3f509-0xBB9ED002, IdCategory: Grain, BaseTypeCode: -55315191 (xFCB3F509), PrimaryKey: 12345 (x3039), UniformHashCode: 3147747330 (0xBB9ED002)], Full ActivationId: @4cf48708cd7dc10fd1b1afff4df06ebe0000000000000000]	
+[2017-11-25 02:52:56.013 GMT    19	INFO   	102925	Orleans.Runtime.ReminderService.LocalReminderService	127.0.0.1:2233]	Starting Orleans.Runtime.ReminderService.LocalReminderService grain service on: S127.0.0.1:2233:249274360 xDF12CA21, with range 	
+[2017-11-25 02:52:56.044 GMT    24	INFO   	100000	Runtime.Messaging.GatewayAcceptor	127.0.0.1:2233]	Starting AsyncAgent Runtime.Messaging.GatewayAcceptor on managed thread 24	
+[2017-11-25 02:52:56.046 GMT    25	INFO   	100000	Runtime.Messaging.GatewayClientCleanupAgent	127.0.0.1:2233]	Starting AsyncAgent Runtime.Messaging.GatewayClientCleanupAgent on managed thread 25	
+[2017-11-25 02:52:56.068 GMT     1	INFO   	100424	OrleansSiloHost	127.0.0.1:2233]	Silo startup event name: TestSilo	
+[2017-11-25 02:52:56.132 GMT    24	INFO   	100328	Runtime.Messaging.GatewayAcceptor	127.0.0.1:2233]	Stopping AsyncAgent Runtime.Messaging.GatewayAcceptor that runs on managed thread 24	
+[2017-11-25 02:52:56.134 GMT     1	INFO   	100425	OrleansSiloHost	127.0.0.1:2233]	Created and set startup event TestSilo	
+[2017-11-25 02:52:56.137 GMT     1	INFO   	100402	OrleansSiloHost	127.0.0.1:2233]	Silo TestSilo started successfully	
+[2017-11-25 02:53:33.576 GMT    31	INFO   	101301	Orleans.Messaging.Gateway	127.0.0.1:2233]	Recorded opened socket from endpoint 127.0.0.1:58928, client ID *cli/46f545b5.	
+[2017-11-25 02:53:33.674 GMT    35	INFO   	100000	Runtime.Messaging.GatewaySender/GatewaySiloSender_0	127.0.0.1:2233]	Starting AsyncAgent Runtime.Messaging.GatewaySender/GatewaySiloSender_0 on managed thread 35	
+[2017-11-25 02:53:48.908 GMT    12	INFO   	100507	Catalog	127.0.0.1:2233]	Before collection#2: memory=9MB, #activations=3, collector=<#Activations=1, #Buckets=1, buckets=[2h:0m:11s.92ms->1 items]>.	
+[2017-11-25 02:53:48.912 GMT    12	INFO   	100508	Catalog	127.0.0.1:2233]	After collection#2: memory=9MB, #activations=3, collected 0 activations, collector=<#Activations=1, #Buckets=1, buckets=[2h:0m:11s.87ms->1 items]>, collection time=00:00:00.0052771.	
+[2017-11-25 02:54:48.923 GMT    19	INFO   	100507	Catalog	127.0.0.1:2233]	Before collection#3: memory=11MB, #activations=3, collector=<#Activations=1, #Buckets=1, buckets=[1h:59m:11s.76ms->1 items]>.	
+[2017-11-25 02:54:48.926 GMT    19	INFO   	100508	Catalog	127.0.0.1:2233]	After collection#3: memory=11MB, #activations=3, collected 0 activations, collector=<#Activations=1, #Buckets=1, buckets=[1h:59m:11s.73ms->1 items]>, collection time=00:00:00.0029937.	
+[2017-11-25 02:55:48.938 GMT    20	INFO   	100507	Catalog	127.0.0.1:2233]	Before collection#4: memory=9MB, #activations=3, collector=<#Activations=1, #Buckets=1, buckets=[1h:58m:11s.61ms->1 items]>.	
+[2017-11-25 02:55:48.941 GMT    20	INFO   	100508	Catalog	127.0.0.1:2233]	After collection#4: memory=9MB, #activations=3, collected 0 activations, collector=<#Activations=1, #Buckets=1, buckets=[1h:58m:11s.58ms->1 items]>, collection time=00:00:00.0028988.	
+[2017-11-25 02:56:48.943 GMT    20	INFO   	100507	Catalog	127.0.0.1:2233]	Before collection#5: memory=11MB, #activations=3, collector=<#Activations=1, #Buckets=1, buckets=[1h:57m:11s.56ms->1 items]>.	
+[2017-11-25 02:56:48.945 GMT    20	INFO   	100508	Catalog	127.0.0.1:2233]	After collection#5: memory=11MB, #activations=3, collected 0 activations, collector=<#Activations=1, #Buckets=1, buckets=[1h:57m:11s.54ms->1 items]>, collection time=00:00:00.0019316.	
+[2017-11-25 02:57:48.952 GMT    20	INFO   	100507	Catalog	127.0.0.1:2233]	Before collection#6: memory=9MB, #activations=3, collector=<#Activations=1, #Buckets=1, buckets=[1h:56m:11s.47ms->1 items]>.	
+[2017-11-25 02:57:48.955 GMT    20	INFO   	100508	Catalog	127.0.0.1:2233]	After collection#6: memory=9MB, #activations=3, collected 0 activations, collector=<#Activations=1, #Buckets=1, buckets=[1h:56m:11s.44ms->1 items]>, collection time=00:00:00.0028385.	
+[2017-11-25 02:57:55.914 GMT     7	INFO   	100704	SiloLogStatistics	127.0.0.1:2233]	Statistics: ^^^
+App.Requests.Latency.Average.Millis=1.000
+App.Requests.LatencyHistogram.Millis=[0.1024:0.2047]=1, [0.2048:0.4095]=281, [0.4096:0.8191]=22, [0.8192:1.6383]=19, [1.6384:3.2767]=21, [3.2768:6.5535]=23, [6.5536:13.1071]=8, [26.2144:52.4287]=3, 
+App.Requests.TimedOut.Current=0
+App.Requests.Total.Requests.Current=378
+Catalog.Activation.Collection.NumberOfCollections.Current=6
+Catalog.Activation.Created.Current=3
+Catalog.Activation.CurrentCount=3
+Catalog.Activation.Destroyed.Current=0
+Catalog.Activation.FailedToActivate.Current=0
+ConsistentRing.AverageRangePercentage=100.000
+ConsistentRing.MyRange.RingDistance=x100000000
+ConsistentRing.MyRange.RingPercentage=100.000
+ConsistentRing.Ring=[S127.0.0.1:2233:249274360 -> <MultiRange: Size=x100000000, %Ring=100.000%>]
+ConsistentRing.RingSize=1
+Directory.CacheSize=0
+Directory.Lookups.Cache.HitRatio=0, Delta=0
+Directory.Lookups.Cache.Issued.Current=0
+Directory.Lookups.Cache.Successes.Current=0
+Directory.Lookups.Full.Issued.Current=2
+Directory.Lookups.Local.Issued.Current=78
+Directory.Lookups.Local.Successes.Current=76
+Directory.Lookups.LocalDirectory.Issued.Current=80
+Directory.Lookups.LocalDirectory.Successes.Current=76
+Directory.Lookups.Remote.Received.Current=0
+Directory.Lookups.Remote.Sent.Current=0
+Directory.PartitionSize=4
+Directory.Registrations.Issued.Current=2
+Directory.Registrations.Local.Current=2
+Directory.Registrations.Remote.Received.Current=0
+Directory.Registrations.Remote.Sent.Current=0
+Directory.Registrations.SingleAct.Issued.Current=3
+Directory.Registrations.SingleAct.Local.Current=3
+Directory.Registrations.SingleAct.Remote.Received.Current=0
+Directory.Registrations.SingleAct.Remote.Sent.Current=0
+Directory.Ring=[S127.0.0.1:2233:249274360/DF12CA21]
+Directory.Ring.MyPortion.AverageRingPercentage=100.000
+Directory.Ring.MyPortion.RingDistance=0
+Directory.Ring.MyPortion.RingPercentage=0.000
+Directory.Ring.MyPredecessors=[]
+Directory.Ring.MySuccessors=[]
+Directory.Ring.RingSize=1
+Directory.UnRegistrations.Issued.Current=0
+Directory.UnRegistrations.Local.Current=0
+Directory.UnRegistrations.Remote.Received.Current=0
+Directory.UnRegistrations.Remote.Sent.Current=0
+Directory.UnRegistrationsMany.Issued.Current=0
+Directory.UnRegistrationsMany.Remote.Received.Current=0
+Directory.UnRegistrationsMany.Remote.Sent.Current=0
+Directory.Validations.Cache.Received.Current=0
+Directory.Validations.Cache.Sent.Current=0
+Dispatcher.NewPlacement.Current=2
+Gateway.ConnectedClients.Current=1
+Gateway.LoadShedding.Current=0
+Gateway.Received.Current=3
+Gateway.Sent.Current=3
+Grain.Grains.StockGrain.Current=1
+Grain.Orleans.Runtime.MembershipService.GrainBasedMembershipTable.Current=1
+Grain.Orleans.Runtime.ReminderService.GrainBasedReminderTable.Current=1
+Membership.ActiveCluster=[S127.0.0.1:2233:249274360]
+Membership.ActiveClusterSize=1
+MessageCenter.ReceiveQueueLength=0
+MessageCenter.SendQueueLength=0
+Messaging.Acceptor.AllocatedSocketEventArgs.Current=1
+Messaging.Acceptor.CheckedInSocketEventArgs.Current=0
+Messaging.Acceptor.CheckedOutSocketEventArgs.Current=1
+Messaging.Acceptor.InUseSocketEventArgs=1
+Messaging.Expired.AtDispatch.Current=0
+Messaging.Expired.AtInvoke.Current=0
+Messaging.Expired.AtReceive.Current=0
+Messaging.Expired.AtRespond.Current=0
+Messaging.Expired.AtSend.Current=0
+Messaging.Processing.ActivationData.All=0
+Messaging.Processing.Dispatcher.Processed.Errors.Direction.OneWay.Current=0
+Messaging.Processing.Dispatcher.Processed.Errors.Direction.Request.Current=0
+Messaging.Processing.Dispatcher.Processed.Errors.Direction.Response.Current=0
+Messaging.Processing.Dispatcher.Processed.Ok.Direction.OneWay.Current=0
+Messaging.Processing.Dispatcher.Processed.Ok.Direction.Request.Current=78
+Messaging.Processing.Dispatcher.Processed.Ok.Direction.Response.Current=0
+Messaging.Processing.Dispatcher.Processed.ReRoute.Direction.OneWay.Current=0
+Messaging.Processing.Dispatcher.Processed.ReRoute.Direction.Request.Current=0
+Messaging.Processing.Dispatcher.Processed.ReRoute.Direction.Response.Current=0
+Messaging.Processing.Dispatcher.Processed.Total.Current=78
+Messaging.Processing.Dispatcher.Received.Direction.OneWay.Current=0
+Messaging.Processing.Dispatcher.Received.Direction.Request.Current=78
+Messaging.Processing.Dispatcher.Received.Direction.Response.Current=0
+Messaging.Processing.Dispatcher.Received.OnActivationContext.Current=76
+Messaging.Processing.Dispatcher.Received.OnNullContext.Current=2
+Messaging.Processing.Dispatcher.Received.Total.Current=78
+Messaging.Processing.IGC.Forwarded.Current=0
+Messaging.Processing.IGC.ReRoute.Current=0
+Messaging.Processing.IGC.Resent.Current=0
+Messaging.Processing.IMA.Enqueued.ToActivationContex.Current=76
+Messaging.Processing.IMA.Enqueued.ToNullContex.Current=2
+Messaging.Processing.IMA.Enqueued.ToSystemTargetContex.Current=681
+Messaging.Processing.IMA.Received.Current=759
+Messaging.Received.BatchSize.PerSocketDirection.GatewayToClient=0.000
+Messaging.Received.BatchSize.PerSocketDirection.SiloToSilo=0.000
+Messaging.Received.BatchSizeBytesHistogram.Bytes.PerSocketDirection.GatewayToClient=
+Messaging.Received.BatchSizeBytesHistogram.Bytes.PerSocketDirection.SiloToSilo=
+Messaging.Received.Bytes.Header.Current=637
+Messaging.Received.Bytes.Total.Current=710
+Messaging.Received.Direction.OneWay.Current=0
+Messaging.Received.Direction.Request.Current=3
+Messaging.Received.Direction.Response.Current=0
+Messaging.Received.Messages.From.Null.Current=3
+Messaging.Received.Messages.Total.Current=3
+Messaging.Received.MessageSizeHistogram.Bytes=[128:255]=2, [256:511]=1, 
+Messaging.Rerouted.OneWay.Current=0
+Messaging.Rerouted.Request.Current=3
+Messaging.Rerouted.Response.Current=0
+Messaging.Sent.BatchSize.PerSocketDirection.GatewayToClient=0.000
+Messaging.Sent.BatchSize.PerSocketDirection.SiloToSilo=0.000
+Messaging.Sent.BatchSizeBytesHistogram.Bytes.PerSocketDirection.GatewayToClient=
+Messaging.Sent.BatchSizeBytesHistogram.Bytes.PerSocketDirection.SiloToSilo=
+Messaging.Sent.Bytes.Header.Current=665
+Messaging.Sent.Bytes.Total.Current=2624
+Messaging.Sent.Direction.OneWay.Current=0
+Messaging.Sent.Direction.Request.Current=0
+Messaging.Sent.Direction.Response.Current=3
+Messaging.Sent.LocalMessages.Current=759
+Messaging.Sent.Messages.To.Null.Current=3
+Messaging.Sent.Messages.Total.Current=3
+Messaging.Sent.MessageSizeHistogram.Bytes=[256:511]=2, [1024:2047]=1, 
+Networking.Sockets.GatewayToClient.Duplex.Closed.Current=0
+Networking.Sockets.GatewayToClient.Duplex.Opened.Current=1
+Networking.Sockets.Silo.Receiving.Closed.Current=0
+Networking.Sockets.Silo.Receiving.Opened.Current=0
+Networking.Sockets.Silo.Sending.Closed.Current=0
+Networking.Sockets.Silo.Sending.Opened.Current=0
+Queues.QueueSize.Instantaneous.Scheduler.LevelOne=0
+Reminders.AverageTardiness.Seconds=0 Secs
+Reminders.NumberOfActiveReminders=0
+Reminders.TicksDelivered.Current=0
+Runtime.CpuUsage=4.147
+Runtime.DOT.NET.ThreadPool.InUse.CompletionPortThreads=0
+Runtime.DOT.NET.ThreadPool.InUse.WorkerThreads=1
+Runtime.GC.AllocatedBytesInKbPerSec=215.981
+Runtime.GC.GenCollectonCount=gen0=30, gen1=7, gen2=4
+Runtime.GC.GenSizesKb=gen0=3072.00, gen1=237.92, gen2=5534.98
+Runtime.GC.LargeObjectHeapSizeKb=5371.227
+Runtime.GC.NumberOfInducedGCs=2.000
+Runtime.GC.PercentOfTimeInGC=0.004
+Runtime.GC.PromotedFinalizationMemoryFromGen0Kb=0.000
+Runtime.GC.PromotedMemoryFromGen1Kb=0.000
+Runtime.GC.TotalMemoryKb=11896
+Runtime.IsOverloaded=False
+Runtime.Memory.AvailableMemoryMb=3610
+Runtime.Memory.TotalPhysicalMemoryMb=8192
+Runtime.Threads.AsynchAgent.Runtime.GrainDirectory.AdaptiveDirectoryCacheMaintainer`1.Current=1
+Runtime.Threads.AsynchAgent.Runtime.GrainDirectory.GlobalSingleInstanceActivationMaintainer.Current=0
+Runtime.Threads.AsynchAgent.Runtime.Messaging.GatewayAcceptor.Current=0
+Runtime.Threads.AsynchAgent.Runtime.Messaging.GatewayClientCleanupAgent.Current=1
+Runtime.Threads.AsynchAgent.Runtime.Messaging.GatewaySender.Current=1
+Runtime.Threads.AsynchAgent.Runtime.Messaging.IncomingMessageAcceptor.Current=0
+Runtime.Threads.AsynchAgent.Runtime.Messaging.IncomingMessageAgent.Current=3
+Runtime.Threads.AsynchAgent.Runtime.Messaging.SiloMessageSender.Current=2
+Runtime.Threads.AsynchAgent.Runtime.Scheduler.WorkerPoolThread.Current=9
+Runtime.Threads.AsynchAgent.Runtime.Watchdog.Current=1
+Runtime.Threads.AsynchAgent.TotalThreadsCreated.Current=21
+Scheduler.NumLongQueueWaitTimes.Current=0
+Scheduler.NumLongRunningTurns.Current=0
+Scheduler.WorkItemGroupCount=16
+Serialization.BufferPool.AllocatedBuffers.Current=250
+Serialization.BufferPool.BuffersInPool=218
+Serialization.BufferPool.CheckedInBuffers.Current=287
+Serialization.BufferPool.CheckedOutBuffers.Current=319
+Serialization.BufferPool.DroppedBuffers.Current=0
+Serialization.BufferPool.DroppedTooLargeBuffers.Current=0
+Serialization.BufferPool.InUse.AllocatedAndNotInPool_Buffers=32
+Serialization.BufferPool.InUse.CheckedOutAndNotCheckedIn_Buffers=32
+Silo.StartTime=2017-11-25 02:52:40.233 GMT
+Storage.Activate.Errors.Current=0
+Storage.Activate.Total.Current=0
+Storage.Clear.Errors.Current=0
+Storage.Clear.Latency=0 Secs
+Storage.Clear.Total.Current=0
+Storage.Read.Errors.Current=0
+Storage.Read.Latency=0 Secs
+Storage.Read.Total.Current=0
+Storage.Write.Errors.Current=0
+Storage.Write.Latency=0 Secs
+Storage.Write.Total.Current=0
+SystemTarget..Current=3
+Watchdog.NumHealthChecks.Current=0
+	

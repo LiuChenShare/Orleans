@@ -1,0 +1,136 @@
+[2017-11-25 02:53:32.688 GMT     1	INFO   	100000	AssemblyLoader.Client	]	Recursively searching for assemblies in G:\Zupo\Git\LC-Project\Orleans\初学\官方教程\股票\Client\bin\Debug...	
+[2017-11-25 02:53:32.752 GMT     1	INFO   	100000	AssemblyLoader.Client	]	User assembly ignored: G:\Zupo\Git\LC-Project\Orleans\初学\官方教程\股票\Client\bin\Debug\Grains.dll
+	* Assembly contains no types assignable from Orleans.Providers.IProvider.	
+[2017-11-25 02:53:32.753 GMT     1	INFO   	100000	AssemblyLoader.Client	]	User assembly ignored: G:\Zupo\Git\LC-Project\Orleans\初学\官方教程\股票\Client\bin\Debug\IGrains.dll
+	* Assembly contains no types assignable from Orleans.Providers.IProvider.	
+[2017-11-25 02:53:33.041 GMT     1	INFO   	100000	AssemblyLoader.Client	]	User assembly ignored: G:\Zupo\Git\LC-Project\Orleans\初学\官方教程\股票\Client\bin\Debug\Microsoft.CodeAnalysis.CSharp.dll
+	* Assembly contains no types assignable from Orleans.Providers.IProvider.	
+[2017-11-25 02:53:33.158 GMT     1	INFO   	100000	AssemblyLoader.Client	]	User assembly ignored: G:\Zupo\Git\LC-Project\Orleans\初学\官方教程\股票\Client\bin\Debug\Microsoft.CodeAnalysis.dll
+	* Assembly contains no types assignable from Orleans.Providers.IProvider.	
+[2017-11-25 02:53:33.160 GMT     1	INFO   	100000	AssemblyLoader.Client	]	User assembly ignored: G:\Zupo\Git\LC-Project\Orleans\初学\官方教程\股票\Client\bin\Debug\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+	* Assembly contains no types assignable from Orleans.Providers.IProvider.	
+[2017-11-25 02:53:33.166 GMT     1	INFO   	100000	AssemblyLoader.Client	]	User assembly ignored: G:\Zupo\Git\LC-Project\Orleans\初学\官方教程\股票\Client\bin\Debug\Microsoft.Extensions.DependencyInjection.dll
+	* Assembly contains no types assignable from Orleans.Providers.IProvider.	
+[2017-11-25 02:53:33.167 GMT     1	INFO   	100000	AssemblyLoader.Client	]	User assembly ignored: G:\Zupo\Git\LC-Project\Orleans\初学\官方教程\股票\Client\bin\Debug\Microsoft.Win32.Primitives.dll
+	* Assembly contains no types assignable from Orleans.Providers.IProvider.	
+[2017-11-25 02:53:33.185 GMT     1	INFO   	100000	AssemblyLoader.Client	]	User assembly ignored: G:\Zupo\Git\LC-Project\Orleans\初学\官方教程\股票\Client\bin\Debug\Newtonsoft.Json.dll
+	* Assembly contains no types assignable from Orleans.Providers.IProvider.	
+[2017-11-25 02:53:33.186 GMT     1	INFO   	100000	AssemblyLoader.Client	]	User assembly ignored: G:\Zupo\Git\LC-Project\Orleans\初学\官方教程\股票\Client\bin\Debug\Orleans.dll
+	* Assembly filename is excluded.	
+[2017-11-25 02:53:33.189 GMT     1	INFO   	100000	AssemblyLoader.Client	]	User assembly ignored: G:\Zupo\Git\LC-Project\Orleans\初学\官方教程\股票\Client\bin\Debug\OrleansCodeGenerator.dll
+	* Assembly contains no types assignable from Orleans.Providers.IProvider.	
+[2017-11-25 02:53:33.198 GMT     1	INFO   	100000	AssemblyLoader.Client	]	User assembly ignored: G:\Zupo\Git\LC-Project\Orleans\初学\官方教程\股票\Client\bin\Debug\System.AppContext.dll
+	* Assembly contains no types assignable from Orleans.Providers.IProvider.	
+[2017-11-25 02:53:33.214 GMT     1	INFO   	100000	AssemblyLoader.Client	]	User assembly ignored: G:\Zupo\Git\LC-Project\Orleans\初学\官方教程\股票\Client\bin\Debug\System.Collections.Immutable.dll
+	* Assembly contains no types assignable from Orleans.Providers.IProvider.	
+[2017-11-25 02:53:33.217 GMT     1	INFO   	100000	AssemblyLoader.Client	]	User assembly ignored: G:\Zupo\Git\LC-Project\Orleans\初学\官方教程\股票\Client\bin\Debug\System.Console.dll
+	* Assembly contains no types assignable from Orleans.Providers.IProvider.	
+[2017-11-25 02:53:33.222 GMT     1	INFO   	100000	AssemblyLoader.Client	]	User assembly ignored: G:\Zupo\Git\LC-Project\Orleans\初学\官方教程\股票\Client\bin\Debug\System.Diagnostics.DiagnosticSource.dll
+	* Assembly contains no types assignable from Orleans.Providers.IProvider.	
+[2017-11-25 02:53:33.227 GMT     1	INFO   	100000	AssemblyLoader.Client	]	User assembly ignored: G:\Zupo\Git\LC-Project\Orleans\初学\官方教程\股票\Client\bin\Debug\System.Diagnostics.FileVersionInfo.dll
+	* Assembly contains no types assignable from Orleans.Providers.IProvider.	
+[2017-11-25 02:53:33.230 GMT     1	INFO   	100000	AssemblyLoader.Client	]	User assembly ignored: G:\Zupo\Git\LC-Project\Orleans\初学\官方教程\股票\Client\bin\Debug\System.Diagnostics.StackTrace.dll
+	* Assembly contains no types assignable from Orleans.Providers.IProvider.	
+[2017-11-25 02:53:33.233 GMT     1	INFO   	100000	AssemblyLoader.Client	]	User assembly ignored: G:\Zupo\Git\LC-Project\Orleans\初学\官方教程\股票\Client\bin\Debug\System.Globalization.Calendars.dll
+	* Assembly contains no types assignable from Orleans.Providers.IProvider.	
+[2017-11-25 02:53:33.239 GMT     1	INFO   	100000	AssemblyLoader.Client	]	User assembly ignored: G:\Zupo\Git\LC-Project\Orleans\初学\官方教程\股票\Client\bin\Debug\System.IO.Compression.dll
+	* Assembly contains no types assignable from Orleans.Providers.IProvider.	
+[2017-11-25 02:53:33.241 GMT     1	INFO   	100000	AssemblyLoader.Client	]	User assembly ignored: G:\Zupo\Git\LC-Project\Orleans\初学\官方教程\股票\Client\bin\Debug\System.IO.Compression.ZipFile.dll
+	* Assembly contains no types assignable from Orleans.Providers.IProvider.	
+[2017-11-25 02:53:33.244 GMT     1	INFO   	100000	AssemblyLoader.Client	]	User assembly ignored: G:\Zupo\Git\LC-Project\Orleans\初学\官方教程\股票\Client\bin\Debug\System.IO.FileSystem.dll
+	* Assembly contains no types assignable from Orleans.Providers.IProvider.	
+[2017-11-25 02:53:33.246 GMT     1	INFO   	100000	AssemblyLoader.Client	]	User assembly ignored: G:\Zupo\Git\LC-Project\Orleans\初学\官方教程\股票\Client\bin\Debug\System.IO.FileSystem.Primitives.dll
+	* Assembly contains no types assignable from Orleans.Providers.IProvider.	
+[2017-11-25 02:53:33.256 GMT     1	INFO   	100000	AssemblyLoader.Client	]	User assembly ignored: G:\Zupo\Git\LC-Project\Orleans\初学\官方教程\股票\Client\bin\Debug\System.Net.Http.dll
+	* Assembly contains no types assignable from Orleans.Providers.IProvider.	
+[2017-11-25 02:53:33.258 GMT     1	INFO   	100000	AssemblyLoader.Client	]	User assembly ignored: G:\Zupo\Git\LC-Project\Orleans\初学\官方教程\股票\Client\bin\Debug\System.Net.Sockets.dll
+	* Assembly contains no types assignable from Orleans.Providers.IProvider.	
+[2017-11-25 02:53:33.285 GMT     1	INFO   	100000	AssemblyLoader.Client	]	User assembly ignored: G:\Zupo\Git\LC-Project\Orleans\初学\官方教程\股票\Client\bin\Debug\System.Reflection.Metadata.dll
+	* Assembly contains no types assignable from Orleans.Providers.IProvider.	
+[2017-11-25 02:53:33.288 GMT     1	INFO   	100000	AssemblyLoader.Client	]	User assembly ignored: G:\Zupo\Git\LC-Project\Orleans\初学\官方教程\股票\Client\bin\Debug\System.Runtime.InteropServices.RuntimeInformation.dll
+	* Assembly contains no types assignable from Orleans.Providers.IProvider.	
+[2017-11-25 02:53:33.291 GMT     1	INFO   	100000	AssemblyLoader.Client	]	User assembly ignored: G:\Zupo\Git\LC-Project\Orleans\初学\官方教程\股票\Client\bin\Debug\System.Security.Cryptography.Algorithms.dll
+	* Assembly contains no types assignable from Orleans.Providers.IProvider.	
+[2017-11-25 02:53:33.293 GMT     1	INFO   	100000	AssemblyLoader.Client	]	User assembly ignored: G:\Zupo\Git\LC-Project\Orleans\初学\官方教程\股票\Client\bin\Debug\System.Security.Cryptography.Encoding.dll
+	* Assembly contains no types assignable from Orleans.Providers.IProvider.	
+[2017-11-25 02:53:33.296 GMT     1	INFO   	100000	AssemblyLoader.Client	]	User assembly ignored: G:\Zupo\Git\LC-Project\Orleans\初学\官方教程\股票\Client\bin\Debug\System.Security.Cryptography.Primitives.dll
+	* Assembly contains no types assignable from Orleans.Providers.IProvider.	
+[2017-11-25 02:53:33.299 GMT     1	INFO   	100000	AssemblyLoader.Client	]	User assembly ignored: G:\Zupo\Git\LC-Project\Orleans\初学\官方教程\股票\Client\bin\Debug\System.Security.Cryptography.X509Certificates.dll
+	* Assembly contains no types assignable from Orleans.Providers.IProvider.	
+[2017-11-25 02:53:33.303 GMT     1	INFO   	100000	AssemblyLoader.Client	]	User assembly ignored: G:\Zupo\Git\LC-Project\Orleans\初学\官方教程\股票\Client\bin\Debug\System.Text.Encoding.CodePages.dll
+	* Assembly contains no types assignable from Orleans.Providers.IProvider.	
+[2017-11-25 02:53:33.306 GMT     1	INFO   	100000	AssemblyLoader.Client	]	User assembly ignored: G:\Zupo\Git\LC-Project\Orleans\初学\官方教程\股票\Client\bin\Debug\System.Threading.Thread.dll
+	* Assembly contains no types assignable from Orleans.Providers.IProvider.	
+[2017-11-25 02:53:33.310 GMT     1	INFO   	100000	AssemblyLoader.Client	]	User assembly ignored: G:\Zupo\Git\LC-Project\Orleans\初学\官方教程\股票\Client\bin\Debug\System.ValueTuple.dll
+	* Assembly contains no types assignable from Orleans.Providers.IProvider.	
+[2017-11-25 02:53:33.311 GMT     1	INFO   	100000	AssemblyLoader.Client	]	User assembly ignored: G:\Zupo\Git\LC-Project\Orleans\初学\官方教程\股票\Client\bin\Debug\System.Xml.ReaderWriter.dll
+	* Assembly contains no types assignable from Orleans.Providers.IProvider.	
+[2017-11-25 02:53:33.316 GMT     1	INFO   	100000	AssemblyLoader.Client	]	User assembly ignored: G:\Zupo\Git\LC-Project\Orleans\初学\官方教程\股票\Client\bin\Debug\System.Xml.XmlDocument.dll
+	* Assembly contains no types assignable from Orleans.Providers.IProvider.	
+[2017-11-25 02:53:33.319 GMT     1	INFO   	100000	AssemblyLoader.Client	]	User assembly ignored: G:\Zupo\Git\LC-Project\Orleans\初学\官方教程\股票\Client\bin\Debug\System.Xml.XPath.dll
+	* Assembly contains no types assignable from Orleans.Providers.IProvider.	
+[2017-11-25 02:53:33.320 GMT     1	INFO   	100000	AssemblyLoader.Client	]	User assembly ignored: G:\Zupo\Git\LC-Project\Orleans\初学\官方教程\股票\Client\bin\Debug\System.Xml.XPath.XDocument.dll
+	* Assembly contains no types assignable from Orleans.Providers.IProvider.	
+[2017-11-25 02:53:33.322 GMT     1	INFO   	100000	AssemblyLoader.Client	]	Loading assembly G:\Zupo\Git\LC-Project\Orleans\初学\官方教程\股票\Client\bin\Debug\OrleansProviders.dll...	
+[2017-11-25 02:53:33.349 GMT     1	INFO   	100000	AssemblyLoader.Client	]	1 assemblies loaded.	
+[2017-11-25 02:53:33.426 GMT     1	INFO   	100313	OutsideRuntimeClient	]	---------- Initializing OutsideRuntimeClient on DESKTOP-08HR6NP at 192.168.1.3 Client Id = *cli/46f545b5 ----------	
+[2017-11-25 02:53:33.439 GMT     1	INFO   	100314	OutsideRuntimeClient	]	---------- Starting OutsideRuntimeClient with runtime Version='1.5.2.0 (Release).' in AppDomain=<AppDomain.Id=1, AppDomain.FriendlyName=Client.exe> Config= 
+ Platform version info:
+   Orleans version: 1.5.2.0 (Release).
+   .NET version: 4.0.30319.42000
+   OS version: Microsoft Windows NT 6.2.9200.0
+   App config file: G:\Zupo\Git\LC-Project\Orleans\初学\官方教程\股票\Client\bin\Debug\Client.exe.Config
+   GC Type=Client GCLatencyMode=Interactive
+   Host: DESKTOP-08HR6NP
+   Processor Count: 8
+Client Configuration:
+   Config File Name: 
+   Start time: 2017-11-25 02:53:33.433 GMT
+   Gateway Provider: Config
+   Gateways[1]:
+      127.0.0.1:1234
+   Preferred Gateway Index: -1
+   GatewayListRefreshPeriod: 00:01:00
+   Preferred Address Family: InterNetwork
+   DNS Host Name: DESKTOP-08HR6NP
+   Client Name: Client
+   Tracing: 
+     Default Trace Level: Info
+     TraceLevelOverrides: None
+     Trace to Console: True
+     Trace File Name: G:\Zupo\Git\LC-Project\Orleans\初学\官方教程\股票\Client\bin\Debug\Client-2017-11-25-02.53.29.042Z.log
+     LargeMessageWarningThreshold: 85000
+     PropagateActivityId: False
+     BulkMessageLimit: 5
+   Statistics: 
+     MetricsTableWriteInterval: 00:00:30
+     PerfCounterWriteInterval: -00:00:00.0010000
+     LogWriteInterval: 00:05:00
+     WriteLogStatisticsToTable: True
+     StatisticsCollectionLevel: Info
+   Messaging:
+       Response timeout: 00:30:00
+       Maximum resend count: 0
+       Resend On Timeout: False
+       Maximum Socket Age: 10675199.02:48:05.4775807
+       Drop Expired Messages: True
+       Client Sender Buckets: 8192
+       Buffer Pool Buffer Size: 4096
+       Buffer Pool Max Size: 10000
+       Buffer Pool Preallocation Size: 250
+       Fallback serializer: 
+   .NET: 
+       .NET thread pool sizes - Min: Worker Threads=8 Completion Port Threads=8
+       .NET thread pool sizes - Max: Worker Threads=2047 Completion Port Threads=1000
+   Providers:
+       No providers configured.
+	
+[2017-11-25 02:53:33.532 GMT     4	INFO   	101309	Messaging.GatewayManager	]	Found 1 knownGateways from Gateway listProvider [gwy.tcp://127.0.0.1:1234/0]	
+[2017-11-25 02:53:33.572 GMT     4	INFO   	100908	Messaging.GatewayConnection/GatewayClientSender_gwy.tcp://127.0.0.1:1234/0	192.168.1.3:0]	Connected to gateway at address gwy.tcp://127.0.0.1:1234/0 on trial 0.	
+[2017-11-25 02:53:33.578 GMT    12	INFO   	100000	Messaging.GatewayConnection/GatewayClientSender_gwy.tcp://127.0.0.1:1234/0	192.168.1.3:0]	Starting AsyncAgent Messaging.GatewayConnection/GatewayClientSender_gwy.tcp://127.0.0.1:1234/0 on managed thread 12	
+[2017-11-25 02:53:33.578 GMT    13	INFO   	100000	Messaging.GatewayClientReceiver/gwy.tcp://127.0.0.1:1234/0	192.168.1.3:0]	Starting AsyncAgent Messaging.GatewayClientReceiver/gwy.tcp://127.0.0.1:1234/0 on managed thread 13	
+[2017-11-25 02:53:33.787 GMT     7	INFO   	100929	OutsideRuntimeClient	192.168.1.3:0]	---------- Started OutsideRuntimeClient with Global Client ID: C192.168.1.3:0:-249274413*cli/46f545b5@1102ec8d, client GUID ID: *cli/46f545b5	
+[2017-11-25 02:54:33.536 GMT     4	INFO   	101309	Messaging.GatewayManager	192.168.1.3:0]	Refreshed the live Gateway list. Found 1 gateways from Gateway listProvider: [gwy.tcp://127.0.0.1:1234/0]. Picked only known live out of them. Now has 1 live Gateways: [gwy.tcp://127.0.0.1:1234/0]. Previous refresh time was = 2017/11/25 2:53:33	
+[2017-11-25 02:55:33.540 GMT     4	INFO   	101309	Messaging.GatewayManager	192.168.1.3:0]	Refreshed the live Gateway list. Found 1 gateways from Gateway listProvider: [gwy.tcp://127.0.0.1:1234/0]. Picked only known live out of them. Now has 1 live Gateways: [gwy.tcp://127.0.0.1:1234/0]. Previous refresh time was = 2017/11/25 2:54:33	
+[2017-11-25 02:56:33.546 GMT     4	INFO   	101309	Messaging.GatewayManager	192.168.1.3:0]	Refreshed the live Gateway list. Found 1 gateways from Gateway listProvider: [gwy.tcp://127.0.0.1:1234/0]. Picked only known live out of them. Now has 1 live Gateways: [gwy.tcp://127.0.0.1:1234/0]. Previous refresh time was = 2017/11/25 2:55:33	
+[2017-11-25 02:57:33.550 GMT     4	INFO   	101309	Messaging.GatewayManager	192.168.1.3:0]	Refreshed the live Gateway list. Found 1 gateways from Gateway listProvider: [gwy.tcp://127.0.0.1:1234/0]. Picked only known live out of them. Now has 1 live Gateways: [gwy.tcp://127.0.0.1:1234/0]. Previous refresh time was = 2017/11/25 2:56:33	
