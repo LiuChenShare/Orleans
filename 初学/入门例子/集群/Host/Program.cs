@@ -9,7 +9,7 @@ namespace Host
     class Program
     {
         static void Main(string[] args)
-        {
+        { 
             var config = new Orleans.Runtime.Configuration.ClusterConfiguration();
             config.LoadFromFile("Host.xml");
             //SiloHost siloHost = new SiloHost(System.Net.Dns.GetHostName());
