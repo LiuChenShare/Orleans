@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ClientConfiguration xmlns="urn:orleans">
+  <SystemStore SystemStoreType="SqlServer"
+         DeploymentId="OrleansTest"
+         DataConnectionString="Data Source=192.168.8.190;Initial Catalog=OrleansBasic;Persist Security Info=True;User ID=sa;Password=88888888"/>
+</ClientConfiguration>
