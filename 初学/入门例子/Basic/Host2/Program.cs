@@ -31,6 +31,15 @@ namespace Host2
                 Console.WriteLine("启动失败");
             }
             Console.ReadKey();
+
+
+            //关闭silo
+            siloHost.StopOrleansSilo();
+            //未初始化这个silo    （搞不懂啥意思）
+            siloHost.UnInitializeOrleansSilo();
+            //优雅的关闭这个silo
+            siloHost.ShutdownOrleansSilo();
+            Console.ReadKey();
         }
     }
 }
