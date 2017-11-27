@@ -6,11 +6,11 @@ using System.Text;
 using System.Threading.Tasks;
 
 namespace Client
-{
+{ 
     class Program
     {
         static void Main(string[] args)
-        {
+        { 
             //等待服务端启动完毕
             Console.ReadKey();
             //然后我聪明的敲击了回车键
