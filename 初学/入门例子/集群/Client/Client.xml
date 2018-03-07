@@ -2,5 +2,8 @@
 <ClientConfiguration xmlns="urn:orleans">
   <SystemStore SystemStoreType="SqlServer"
          DeploymentId="OrleansTest"
-         DataConnectionString="Data Source=192.168.8.190;Initial Catalog=OrleansBasic;Persist Security Info=True;User ID=sa;Password=88888888"/>
+         DataConnectionString="Data Source=192.168.199.160;Initial Catalog=OrleansBasic;Persist Security Info=True;User ID=sa;Password=l88888888"/>
+  <Tracing DefaultTraceLevel="Warning" TraceToConsole="true" TraceToFile="{0}-{1}.log" PropagateActivityId="false" BulkMessageLimit="1000">
+    <TraceLevelOverride LogPrefix="Application" TraceLevel="Warning" />
+  </Tracing>
 </ClientConfiguration>

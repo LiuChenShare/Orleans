@@ -2,19 +2,27 @@
 <OrleansConfiguration xmlns="urn:orleans">
   <Globals>
     <!--种子节点,也是主节点-->
-    <SeedNode Address="192.168.8.190" Port="11111" />
+    <!--<SeedNode Address="192.168.8.190" Port="11111" />-->
     <SystemStore SystemStoreType="SqlServer"
              DeploymentId="OrleansTest"
-             DataConnectionString="Data Source=192.168.8.190;Initial Catalog=OrleansBasic;Persist Security Info=True;User ID=sa;Password=88888888"/>
+             DataConnectionString="Data Source=192.168.199.160;Initial Catalog=OrleansBasic;Persist Security Info=True;User ID=sa;Password=l88888888"/>
     <!--<StorageProviders>
       <Provider Type="Orleans.Storage.AdoNetStorageProvider" Name="OrleansTest" DataConnectionString="Server=DESKTOP-08HR6NP;Database=OrleansBasic;User Id=sa;Password=88888888;"  />
     </StorageProviders>-->
   </Globals>
   <Defaults>
+    <Tracing DefaultTraceLevel="Warning" TraceToConsole="true" TraceToFile="{0}-{1}.log" PropagateActivityId="false" BulkMessageLimit="1000">
+      <TraceLevelOverride LogPrefix="Application" TraceLevel="Warning" />
+      <!--
+       <TraceLevelOverride LogPrefix="Runtime.MembershipOracle" TraceLevel="Verbose" />
+       <TraceLevelOverride LogPrefix="Runtime.Dispatcher" TraceLevel="Verbose" />
+       <TraceLevelOverride LogPrefix="AssemblyLoader.Silo" TraceLevel="Warning" />
+       -->
+    </Tracing>
     <!--本节点开放的端口,这个端口是用来与silo互动的-->
-    <Networking Address="192.168.8.190" Port="11111" />
+    <Networking Address="192.168.199.160" Port="11111" />
 
     <!--本节点开放的服务端口,这个端口是用来与client互动的-->
-    <ProxyingGateway Address="192.168.8.190" Port="30000" />
+    <ProxyingGateway Address="192.168.199.160" Port="30000" />
   </Defaults>
 </OrleansConfiguration>
