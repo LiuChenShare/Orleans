@@ -7,10 +7,11 @@ using System.Threading.Tasks;
 namespace Grains
 {
     /// <summary>
-    /// 学校
+    /// 教室
     /// </summary>
     public class Classroom : Orleans.Grain, IClassroom
     {
+        /// <summary> 教室内的学生 </summary>
         private List<IStudent> Students = new List<IStudent>();
 
         /// <summary>
