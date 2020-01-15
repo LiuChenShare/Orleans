@@ -3,13 +3,15 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.29609.76
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IGrains", "IGrains\IGrains.csproj", "{98A50356-61E5-4392-A253-C2FA1136588B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "IGrains", "IGrains\IGrains.csproj", "{98A50356-61E5-4392-A253-C2FA1136588B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Grains", "Grains\Grains.csproj", "{B6420DB0-1467-412C-BC67-59C083E99EB1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Grains", "Grains\Grains.csproj", "{B6420DB0-1467-412C-BC67-59C083E99EB1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Client_ConsoleApp", "Client_ConsoleApp\Client_ConsoleApp.csproj", "{19A72249-6009-4B19-A84E-A98E79C15D00}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Client_ConsoleApp", "Client_ConsoleApp\Client_ConsoleApp.csproj", "{19A72249-6009-4B19-A84E-A98E79C15D00}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Silo_ConsoleApp", "Silo_ConsoleApp\Silo_ConsoleApp.csproj", "{22F7CF18-5F63-4379-8059-2AD4D09BCC16}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Silo_ConsoleApp", "Silo_ConsoleApp\Silo_ConsoleApp.csproj", "{22F7CF18-5F63-4379-8059-2AD4D09BCC16}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Client_WebMVCApp", "Client_WebMVCApp\Client_WebMVCApp.csproj", "{DC8399B7-28D9-46C9-9DFF-96A759CADD79}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,10 @@ Global
 		{22F7CF18-5F63-4379-8059-2AD4D09BCC16}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{22F7CF18-5F63-4379-8059-2AD4D09BCC16}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{22F7CF18-5F63-4379-8059-2AD4D09BCC16}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DC8399B7-28D9-46C9-9DFF-96A759CADD79}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DC8399B7-28D9-46C9-9DFF-96A759CADD79}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DC8399B7-28D9-46C9-9DFF-96A759CADD79}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DC8399B7-28D9-46C9-9DFF-96A759CADD79}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
