@@ -8,6 +8,7 @@ using Microsoft.Extensions.Logging;
 using Client_WebMVCApp.Models;
 using Orleans;
 using IGrains;
+using Client_WebMVCApp.Services;
 
 namespace Client_WebMVCApp.Controllers
 {
@@ -15,14 +16,14 @@ namespace Client_WebMVCApp.Controllers
     {
         private readonly ILogger<HomeController> _logger;
 
-        private readonly IGrainFactory _client;
+        private readonly OrleansService _orleansService;
         private readonly IClassroom _classroom;
 
-        public HomeController(ILogger<HomeController> logger, IGrainFactory client)
+        public HomeController(ILogger<HomeController> logger, OrleansService orleansService)
         {
             _logger = logger;
-            _client = client;
-            _classroom = _client.GetGrain<IClassroom>(0);
+            _orleansService = orleansService;
+            _classroom = _orleansService.GetGrain<IClassroom>(0);
         }
 
         /// <summary>
@@ -34,8 +35,9 @@ namespace Client_WebMVCApp.Controllers
         public async Task<IActionResult> GetStudentId(string name)
         {
             var studentId = await _classroom.Enroll(name);
-            IStudent student = _client.GetGrain<IStudent>(studentId);
-            student.SayHello();
+            IStudent student = _orleansService.GetGrain<IStudent>(studentId);
+            _classroom.Seated(student);//落座，不等待它
+            //return Json(new { Success = true, Data = studentId, Message = "获取成功！" });
             return new JsonResult(new { Success = true, Data = studentId, Message = "获取成功！" });
         }
 

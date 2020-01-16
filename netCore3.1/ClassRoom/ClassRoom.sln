@@ -11,7 +11,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Client_ConsoleApp", "Client
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Silo_ConsoleApp", "Silo_ConsoleApp\Silo_ConsoleApp.csproj", "{22F7CF18-5F63-4379-8059-2AD4D09BCC16}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Client_WebMVCApp", "Client_WebMVCApp\Client_WebMVCApp.csproj", "{DC8399B7-28D9-46C9-9DFF-96A759CADD79}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Client_WebMVCApp", "Client_WebMVCApp\Client_WebMVCApp.csproj", "{DC8399B7-28D9-46C9-9DFF-96A759CADD79}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Client_WebApi", "Client_WebApi\Client_WebApi.csproj", "{6BA79A72-D790-4D2F-93F7-4742F9DD8ABC}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -39,6 +41,10 @@ Global
 		{DC8399B7-28D9-46C9-9DFF-96A759CADD79}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DC8399B7-28D9-46C9-9DFF-96A759CADD79}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DC8399B7-28D9-46C9-9DFF-96A759CADD79}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6BA79A72-D790-4D2F-93F7-4742F9DD8ABC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6BA79A72-D790-4D2F-93F7-4742F9DD8ABC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6BA79A72-D790-4D2F-93F7-4742F9DD8ABC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6BA79A72-D790-4D2F-93F7-4742F9DD8ABC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

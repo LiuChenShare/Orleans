@@ -21,64 +21,8 @@ namespace Client_WebMVCApp
             Host.CreateDefaultBuilder(args)
                 .ConfigureWebHostDefaults(webBuilder =>
                 {
+                    //webBuilder.UseUrls("http://*:777", "http://*:778");
                     webBuilder.UseStartup<Startup>();
-                })
-                .UseOrleans(siloBuilder =>
-                {
-                    siloBuilder
-                    .UseLocalhostClustering()
-                    .Configure<ClusterOptions>(opts =>
-                    {
-                        opts.ClusterId = "dev";
-                        opts.ServiceId = "MyHost";
-                    })
-                    .Configure<EndpointOptions>(opts =>
-                    {
-                        opts.AdvertisedIPAddress = IPAddress.Loopback;
-                    });
                 });
-
-
-
-        public static IHostBuilder CreateHostBuilder2(string[] args) =>
-            (IHostBuilder)Host.CreateDefaultBuilder(args)
-                .ConfigureWebHostDefaults(webBuilder =>
-                {
-                    webBuilder.UseStartup<Startup>();
-                    //webBuilder.Configure((ctx, app) =>
-                    //{
-                    //    if (ctx.HostingEnvironment.IsDevelopment())
-                    //    {
-                    //        app.UseDeveloperExceptionPage();
-                    //    }
-
-                    //    app.UseHttpsRedirection();
-                    //    app.UseRouting();
-                    //    app.UseAuthorization();
-                    //    app.UseEndpoints(endpoints =>
-                    //    {
-                    //        endpoints.MapControllers();
-                    //    });
-                    //});
-                })
-                .ConfigureServices(services =>
-                {
-                    services.AddControllers();
-                })
-                .UseOrleans(siloBuilder =>
-                {
-                    siloBuilder
-                    .UseLocalhostClustering()
-                    .Configure<ClusterOptions>(opts =>
-                    {
-                        opts.ClusterId = "dev";
-                        opts.ServiceId = "MyHost";
-                    })
-                    .Configure<EndpointOptions>(opts =>
-                    {
-                        opts.AdvertisedIPAddress = IPAddress.Loopback;
-                    });
-                })
-            .RunConsoleAsync();
     }
 }

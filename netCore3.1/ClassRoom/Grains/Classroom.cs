@@ -42,7 +42,7 @@ namespace Grains
             }
             foreach (var item in Students)
             {
-                if (item != student)
+                if (item.GetPrimaryKeyLong() != student.GetPrimaryKeyLong())
                 {
                     item.ReceiveMessages("加入新同学", this.GetPrimaryKeyLong(), $"学号{student.GetPrimaryKeyLong()}的童靴加入了我们，大家欢迎");//不等待
                 }
@@ -63,7 +63,7 @@ namespace Grains
             }
             foreach (var item in Students)
             {
-                if (item != student)
+                if (item.GetPrimaryKeyLong() != student.GetPrimaryKeyLong())
                 {
                     item.ReceiveMessages("同学发言", (int)student.GetPrimaryKeyLong(), message);//不等待
                 }
