@@ -2,6 +2,7 @@
 using Orleans;
 using Orleans.Configuration;
 using Orleans.Hosting;
+using Orleans.Statistics;
 using System;
 using System.Net;
 using System.Threading.Tasks;
@@ -66,6 +67,7 @@ namespace Silo_ConsoleApp
                      options.HostSelf = true;
                      options.CounterUpdateIntervalMs = 1000;
                  })//注册Dashboard，具体信息见：https://github.com/OrleansContrib/OrleansDashboard
+                 .UsePerfCounterEnvironmentStatistics()//添加主机CPU和内存监控
                  .Build();
             await host.StartAsync();//启动当前Silo.
             return host;
