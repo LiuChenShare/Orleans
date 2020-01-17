@@ -12,6 +12,7 @@
 
   <ItemGroup>
     <PackageReference Include="Microsoft.Orleans.Server" Version="3.0.2" />
+    <PackageReference Include="OrleansDashboard" Version="3.0.8" />
   </ItemGroup>
 
   <ItemGroup>

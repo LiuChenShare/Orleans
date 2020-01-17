@@ -57,6 +57,15 @@ namespace Silo_ConsoleApp
                  //    options.SiloListeningEndpoint = new IPEndPoint(IPAddress.Any, 50000);
                  //})//配置Silo的端口
                  .ConfigureApplicationParts(parts => parts.AddApplicationPart(typeof(Student).Assembly).WithReferences())
+                 //.ConfigureApplicationParts(parts => parts.AddFromApplicationBaseDirectory())
+                 .UseDashboard(options => {
+                     options.Username = "admin";
+                     options.Password = "123";
+                     options.Host = "*";
+                     options.Port = 8080;
+                     options.HostSelf = true;
+                     options.CounterUpdateIntervalMs = 1000;
+                 })//注册Dashboard，具体信息见：https://github.com/OrleansContrib/OrleansDashboard
                  .Build();
             await host.StartAsync();//启动当前Silo.
             return host;
